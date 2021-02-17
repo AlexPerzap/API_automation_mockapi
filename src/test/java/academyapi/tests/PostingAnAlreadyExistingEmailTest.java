@@ -17,7 +17,7 @@ public class PostingAnAlreadyExistingEmailTest extends BaseTest{
         coreApi().responseCodeValidation(getResponse,200);
         JSONArray dataReceived = new JSONArray(getResponse.getBody().asString());
         Map<String, Boolean> emails = new HashMap<String, Boolean>();
-        String email = "Jermaine60@gmail.com";
+        String email = "updatedEmail@gmail.com";
         for (int i = 0; i < dataReceived.length(); i++) {
             JSONObject obj = dataReceived.getJSONObject(i);
             emails.put((String) obj.get("email"),true);
