@@ -3,8 +3,7 @@ package academyapi.tests;
 import academyapi.util.BaseUrl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import academyapi.api.CoreAPI;
 
 public class BaseTest {
@@ -20,6 +19,5 @@ public class BaseTest {
     public CoreAPI coreApi() {
         return coreAPI;
     }
-
 
 }
