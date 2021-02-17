@@ -3,8 +3,12 @@
 <!--@author Brayhan.Criollo-->
 
 <suite name="Suite1" verbose="1" >
-    <test name="Regression1"   >
-<!--        Desired Classes -->
-<!--        or Packages-->
+    <test name="api automation tests">
+        <classes>
+            <class name="academyapi.tests.EndpointEmptinessTest"></class>
+            <class name="academyapi.tests.emailDuplicationAfterPojoInitTest"></class>
+            <class name="academyapi.tests.userUpdatingTest"></class>
+            <class name="academyapi.tests.PostingAnAlreadyExistingEmailTest"></class>
+        </classes>
     </test>
 </suite>
