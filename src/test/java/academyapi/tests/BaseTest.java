@@ -22,15 +22,4 @@ public class BaseTest {
         return coreAPI;
     }
 
-    @AfterClass
-    public void waitForNextTest() {
-        try {
-            Thread.sleep(7000);
-        } catch (Exception exception) {
-            log.info("Cause is: " + exception.getCause());
-            log.info("Message is: " + exception.getMessage());
-            exception.printStackTrace();
-        }
-    }
-
 }
